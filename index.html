@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/6baf303b76.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Home -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="./images/logo.png" alt="Logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Anish</span> Nepal <br />From Nepal</h1>
+        </div>
+      </div>
+    </div>
+    <!-- About  -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="./images/user.png" alt="User Image" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+              fugiat, quae cupiditate amet adipisci beatae, pariatur tempore ut
+              aspernatur ipsum cum dolore cumque aliquam rerum saepe recusandae
+              voluptates delectus dolores.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Web Development</span><br />
+                  Web Application Development
+                </li>
+                <li><span>Player</span><br />Football Player</li>
+                <li><span>Sports</span><br />Basketball Player</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2022</span><br />
+                  Scratch Coding Competition
+                </li>
+                <li><span>2022</span><br />Poem Competition</li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - Present</span><br />
+                  Gems School, Dhapakhel, Lalitpur
+                </li>
+                <li>
+                  <span>2017-2019</span><br />United School, Satdobato, Lalitpur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="Work 1 Image" />
+            <div class="layer">
+              <h3>Web Application First</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat, aliquid.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="Work 2 Image" />
+            <div class="layer">
+              <h3>Web Application Second</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat, aliquid.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="Work 3 Image" />
+            <div class="layer">
+              <h3>Web Application Third</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Placeat, aliquid.
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>nepalanish98@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i>9876543210</p>
+            <div class="social-icons">
+              <a href="www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+              <a href="www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="www.github.com"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <textarea name="Message" placeholder="Write a message..." rows="6"></textarea>
+              <button class="btn btn2" type="submit">Submit</button>
+            </form>
+            <span id="success-message"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright &#169 Anish. Made with <i class="fa-solid fa-heart"></i> by Anish Nepal</p>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
